@@ -70,17 +70,17 @@ Project Structure
 src/
 ├── app.module.ts
 ├── main.ts
-├── transaction/
-│   ├── mock-transaction-api.ts
-│   ├── transaction.controller.ts
-│   ├── transaction.module.ts
-│   ├── transaction.service.ts
-│   └── transaction.types.ts
+├── transactions/
+│   ├── mock-transaction-api.service.ts
+│   ├── transactions.controller.ts
+│   ├── transactions.module.ts
+│   ├── transactions.service.ts
+│   └── types.ts
 ├── aggregation/
 │   ├── aggregation.controller.ts
 │   ├── aggregation.module.ts
 │   ├── aggregation.service.ts
-│   └── aggregation.types.ts
+│   └── types.ts
 
 
 Transactions Module: Handles fetching and storing transactions from the mock transaction API.
@@ -132,4 +132,3 @@ Authentication and Authorization: Add JWT-based authentication using a library l
 Error Handling and Retries: Implement retry logic for transaction API failures using a library like axios-retry or NestJS's built-in HTTP module with custom interceptors.
 Monitoring and Logging: Integrate third-party tools like Prometheus for metrics and Winston or Pino for structured logging to monitor performance and debug issues in production.
 
-For questions or contributions, please open an issue or submit a pull request in the repository.
